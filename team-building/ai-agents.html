@@ -70,10 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="mermaid-theme" content="default">
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -301,84 +297,11 @@ ul.task-list li input[type="checkbox"] {
 <p>This chapter explores a different organizational pattern: <strong>integrating AI agents as team members</strong>.</p>
 <p>Not as tools. Not as chatbots. But as entities that hold context, perform ongoing roles, and absorb responsibility within real teams.</p>
 <p>This is not a story about automation in the abstract. It is a practical method that emerges under specific constraints, introduces real pressures, and reshapes how work happens when speed outgrows structure.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-
-    %% Phase 1
-    subgraph P1["1. Constraint ID"]
-        S0[Identify Human Bottleneck]
-    end
-
-    %% Phase 2
-    subgraph P2["2. Autonomy Enablement"]
-        S1[Enable Autonomy]
-        S1a[Provide Agentic Dev Access]
-        S1b[Reduce Engineering Dependency]
-        S1 --&gt; S1a
-        S1 --&gt; S1b
-    end
-
-    %% Phase 3
-    subgraph P3["3. Agent-Supported Work"]
-        S2[Independent Contribution]
-        S2a[Locate Existing Components]
-        S2b[Adapt and Assemble Functionality]
-        S2 --&gt; S2a
-        S2 --&gt; S2b
-    end
-
-    %% Phase 4
-    subgraph P4["4. Role Externalization"]
-        S4[Product-Oriented Agent]
-        S4a[Answer Routine Questions]
-        S4b[Async Escalation]
-
-        S5[Architecture-Oriented Agent]
-        S5a[Review Contributions]
-        S5b[Enforce Constraints]
-
-        S4 --&gt; S4a
-        S4 --&gt; S4b
-        S5 --&gt; S5a
-        S5 --&gt; S5b
-    end
-
-    %% Phase 5
-    subgraph P5["5. Emergent Process"]
-        S6[Process Forms Implicitly]
-    end
-
-    %% Phase 6
-    subgraph P6["6. Stable Delivery"]
-        S7[Delivery Cycle]
-        S7a[Design]
-        S7b[Build]
-        S7c[Release]
-        S7 --&gt; S7a
-        S7 --&gt; S7b
-        S7 --&gt; S7c
-    end
-
-    %% Flow
-    P1 --&gt; P2 --&gt; P3 --&gt; P4 --&gt; P5 --&gt; P6
-
-    %% Styling
-    style P1 fill:#F5F7FA,stroke:#6B7280,stroke-width:1px
-    style P2 fill:#E0F2FE,stroke:#0284C7,stroke-width:1px
-    style P3 fill:#ECFDF5,stroke:#059669,stroke-width:1px
-    style P4 fill:#FFF7ED,stroke:#EA580C,stroke-width:1px
-    style P5 fill:#EEF2FF,stroke:#4F46E5,stroke-width:1px
-    style P6 fill:#FDF2F8,stroke:#BE185D,stroke-width:1px
-
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/ai-agents-workflow.png" class="img-fluid figure-img" alt="Flowchart showing the six-phase agent integration workflow from constraint identification through stable delivery"></p>
+<figcaption>Agent Integration Workflow</figcaption>
+</figure>
 </div>
 </section>
 <section id="context-when-speed-outgrows-structure" class="level2">
@@ -440,69 +363,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Together, these agents create something unusual: <strong>process without process</strong>.</p>
 <p>There are no new standing meetings. No heavy documentation mandates. No explicit bureaucracy.</p>
 <p>Structure emerges only where it is needed, mediated through agents rather than enforced through hierarchy.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    %% Humans
-    H[Humans Design · Product · Sales · Ops]
-
-    %% Product (External)
-    Maya[Maya Product AI Design Leader – Customer-facing]
-
-    %% Internal Framework
-    Framework[Agentic Framework Inspired by Maya]
-    Mappy[Mappy PM &amp; Orchestration Agent]
-
-    %% Inputs
-    Sales[Sales Calls &amp; Business Conversations]
-    Slack[Slack Threads Async Input]
-
-    %% Process Stages
-    Ideation[Ideation &amp; Prototyping]
-    Design[Design Decisions &amp; Specs]
-    Build[Build &amp; Implement]
-    Ship[Ship &amp; Launch]
-    Test[Test &amp; Observe]
-    Learn[Learn &amp; Adapt]
-
-    %% Philosophy influence
-    Maya -.-&gt;|Design philosophy guided creation, memory, structure| Framework
-
-    %% Human interaction
-    H --&gt;|Ideas &amp; context| Framework
-    Framework --&gt; Ideation
-    Ideation --&gt; Design
-
-    %% Orchestration
-    Design --&gt; Mappy
-    Sales --&gt; Mappy
-    Slack --&gt; Mappy
-
-    %% Mappy responsibilities
-    Mappy --&gt;|Backlog &amp; Priorities| Build
-    Mappy --&gt;|Design Docs| Build
-    Mappy --&gt;|Decision Memory| Build
-
-    %% Delivery loop
-    Build --&gt; Ship
-    Ship --&gt; Test
-    Test --&gt; Learn
-
-    %% Feedback loops
-    Learn --&gt;|Insights| Framework
-    Learn --&gt;|Updated priorities| Mappy
-
-    %% Async contribution
-    H --&gt;|Async input| Slack
-
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/ai-agents-framework.png" class="img-fluid figure-img" alt="Architecture diagram showing the flow from human input through Maya-inspired framework, Mappy orchestration, to the build-ship-test-learn delivery cycle"></p>
+<figcaption>Agentic Framework Architecture</figcaption>
+</figure>
 </div>
 </section>
 <section id="the-resulting-workflow" class="level2">
