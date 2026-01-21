@@ -702,5 +702,201 @@
     "crumbs": [
       "Managing AI Products"
     ]
+  },
+  {
+    "objectID": "building-ai-products/index.html",
+    "href": "building-ai-products/index.html",
+    "title": "Building AI Products",
+    "section": "",
+    "text": "In This Chapter\nAs AI has shifted from experimental capability to product-defining technology, the central challenge is no longer building models—it is building AI products that work reliably in the real world. Accuracy in a notebook is not a product. A deployed model is not a product. An AI product exists only when data, models, software, and user workflows come together to deliver sustained business value under real operational constraints.\nBuilding AI products exposes a mismatch between how AI has traditionally been developed and how products are actually built. Early AI efforts followed a linear path: data scientists explored data and trained models, engineers productionized the results, and the organization hoped the outcome would create value. This handoff-based approach worked when AI outputs were advisory and failures were tolerable. It breaks down when AI becomes embedded in core user journeys, automated decisions, and revenue-critical systems.\nIn an AI product, modeling choices shape user experience, cost structure, and system behavior. Feature design affects latency and scalability. Training data determines not only performance but fairness, robustness, and regulatory risk. Evaluation metrics must reflect business outcomes, not just statistical quality. A model that performs well offline but degrades silently in production is a product failure, not a technical nuance. Building AI products therefore requires thinking beyond models, and beyond deployment, toward the full lifecycle of value creation.\nThis is where traditional role boundaries begin to dissolve. Data scientists can no longer operate solely in experimental environments detached from production realities. They must reason about how their models behave as part of a live system: how they fail, how they evolve, and how they interact with users and downstream processes. At the same time, engineers building AI-powered products cannot treat models as interchangeable components. Infrastructure decisions—batching, caching, scaling, retraining cadence—directly influence model correctness, trust, and business impact.\nAI products also introduce dynamics that traditional software products rarely face. Data distributions shift. Feedback loops emerge. Systems learn from their own decisions. Errors compound over time rather than appearing as discrete bugs. These properties force product teams to design for monitoring, adaptation, and governance from day one. Reliability, explainability, and ethical constraints become product features, not compliance afterthoughts.\nAs a result, building AI products is fundamentally a systems design problem. Success depends on understanding how data pipelines, learning algorithms, infrastructure, and human users interact over time. The quality of an AI product is measured not just by predictive performance, but by its robustness, adaptability, and alignment with business and societal goals.\nThis book is written from that perspective. It treats AI not as a standalone capability, but as a product discipline—one that demands a shared language and design approach across data science, engineering, and product thinking. Building successful AI products requires these perspectives to converge early, shaping decisions long before the first model is trained and long after the first version is shipped.",
+    "crumbs": [
+      "Building AI Products"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/index.html#in-this-chapter",
+    "href": "building-ai-products/index.html#in-this-chapter",
+    "title": "Building AI Products",
+    "section": "",
+    "text": "Shift from model-centric thinking to AI system and product design.\nApply top-down engineering principles to AI, starting from business flow and requirements.\nUse a system design approach to model as a backbone for designing complete AI systems, not just pipelines.\nIncorporate AI-specific constraints—data, training, inference, and governance—early in the design.\nBuild AI systems that are robust, scalable, and sustainable, not just accurate.",
+    "crumbs": [
+      "Building AI Products"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html",
+    "href": "building-ai-products/ai-system-design.html",
+    "title": "AI System Design",
+    "section": "",
+    "text": "The Expanding Role of the Data Scientist\nWe have established that the AI industry has created a new and often unspoken expectation: data scientists are no longer responsible only for building models, but for designing complete AI systems. While some practitioners come from computer science backgrounds, system design has rarely been the core competency of data science as a discipline. Most data scientists are trained to optimize models, experiment with features, and improve metrics, not to reason about system boundaries, architectural trade-offs, or long-term operational behavior. This gap has become increasingly visible as AI systems move from experimentation into mission-critical production environments.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#the-bottom-up-legacy-of-data-science",
+    "href": "building-ai-products/ai-system-design.html#the-bottom-up-legacy-of-data-science",
+    "title": "AI System Design",
+    "section": "The Bottom-Up Legacy of Data Science",
+    "text": "The Bottom-Up Legacy of Data Science\nTraditional data science development follows a bottom-up trajectory. Work begins with data exploration and modeling, and once a model meets performance expectations, attention shifts to productionization. At that stage, deployment systems are selected or extended to meet the model’s immediate needs, and surrounding infrastructure is built reactively. Architecture emerges as a consequence of the model rather than as a deliberate design. While this approach can work for isolated use cases, it often leads to fragile systems, hidden coupling, and costly redesigns as requirements evolve.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#why-engineering-starts-from-the-top",
+    "href": "building-ai-products/ai-system-design.html#why-engineering-starts-from-the-top",
+    "title": "AI System Design",
+    "section": "Why Engineering Starts from the Top",
+    "text": "Why Engineering Starts from the Top\nIn contrast, established engineering disciplines approach system construction from the top down. System design begins by defining responsibilities, interactions, and constraints at the highest level, long before individual components are implemented. When viewed through this lens, AI development is fundamentally a systems engineering problem. AI introduces new layers—data pipelines, training loops, inference services, monitoring, governance—that cannot be treated as peripheral concerns. Designing these layers requires abstractions and requirements that go beyond both traditional application engineering and classical data science practices.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#designing-before-coding",
+    "href": "building-ai-products/ai-system-design.html#designing-before-coding",
+    "title": "AI System Design",
+    "section": "Designing Before Coding",
+    "text": "Designing Before Coding\nStarting with design fundamentally changes how AI systems are built. A system design allows teams to anticipate architectural changes required by new technologies, align stakeholders before implementation begins, and reason explicitly about trade-offs. It creates a shared understanding of how the system is expected to behave, scale, and evolve. Most importantly, it enables teams to plan for growth, reliability, and operational complexity from the outset, rather than attempting to retrofit these qualities after deployment.\nThis approach builds on the delivery framework and the FTI (feature-training-inference) model by elevating it from a pipeline abstraction into a comprehensive system design perspective that explicitly incorporates the architectural considerations, non-functional requirements, governance, and operational extensions that traditional FTI workflows do not account for.\n\n\n\nHigh-Level System Flow",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#the-dfti-model-as-a-system-design-backbone",
+    "href": "building-ai-products/ai-system-design.html#the-dfti-model-as-a-system-design-backbone",
+    "title": "AI System Design",
+    "section": "The DFTI Model as a System Design Backbone",
+    "text": "The DFTI Model as a System Design Backbone\nThe framework presented in this chapter builds on the DFTI model—data, features, training, and inference—originally conceived as a delivery-oriented way to reason about AI pipelines. In this context, DFTI is extended from a modeling workflow into a system design backbone. Rather than treating data preparation, model training, and inference as isolated steps, the framework connects them to business intent, architectural decisions, and operational constraints. This extension allows AI systems to be designed holistically rather than assembled incrementally.\nTODO: Add a diagram of the DFTI model as a system design backbone.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#from-business-flow-to-system-architecture",
+    "href": "building-ai-products/ai-system-design.html#from-business-flow-to-system-architecture",
+    "title": "AI System Design",
+    "section": "From Business Flow to System Architecture",
+    "text": "From Business Flow to System Architecture\nEvery AI system design begins with a clear understanding of the business flow. This flow describes how value is created, how users interact with the system, and where predictions or decisions are introduced into real-world processes. From this perspective, functional requirements emerge naturally, defining what users should be able to do and how the system should respond. Non-functional requirements define how the system must behave under load, failure, and growth, including latency, scalability, availability, and explainability.\nOnce requirements are established, the system’s core entities take shape. Users, actions, events, decisions, and data objects form the conceptual foundation of the design. Interfaces and APIs translate these concepts into explicit interaction points between components. Only then does the high-level architecture emerge, with components defined according to responsibility rather than convenience. At this stage, additional architectural elements are introduced to satisfy non-functional requirements, such as scaling mechanisms, monitoring systems, and reliability controls.\nTODO: Add a diagram of the process of design",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#integrating-ai-specific-considerations",
+    "href": "building-ai-products/ai-system-design.html#integrating-ai-specific-considerations",
+    "title": "AI System Design",
+    "section": "Integrating AI-Specific Considerations",
+    "text": "Integrating AI-Specific Considerations\nAI introduces design considerations that must be addressed explicitly and early. Data quality and availability influence architectural boundaries long before model selection begins. Feature pipelines determine how reusable and consistent signals are across the system. Training strategies affect how models evolve, adapt, and are validated over time. Inference requirements drive decisions around latency, batching, and deployment topology. Ethical and regulatory constraints, including fairness, transparency, and privacy, impose system-level obligations that cannot be solved at the model level alone.\nTODO: list all the AI-specific considerations that must be addressed explicitly and early. such as - Data quality and availability - Feature pipelines - Training strategies –model choice (supervised, unsupervised, reinforcement learning, etc.) – model architecture (deep learning, transformers, etc.) in relation to the business problem and objectives (latency) –model training data (size, quality, availability) in relation to the business problem and objectives (latency, scalability, etc.) –model training time (speed, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training cost (cost, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training hardware (hardware, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training software (software, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training environment (environment, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) - Inference requirements - tech stack choice (hardware, software, environment) in relation to the business problem and objectives (latency, scalability, etc.) - Ethical and regulatory constraints -validation and evaluation (metrics, thresholds, etc.) in relation to the business problem and objectives (latency, scalability, etc.), offline, in ci, in real time, batched, etc. –tests (unit, integration, end to end, performance, etc.) in relation to the AI constraints, as pydantic, in ci (pros and cons of too much data to be evaluated), as a observability layer, insights, - Feedback loops - Monitoring and adaptation - Governance - Compliance - Transparency - Explainability - Fairness - Privacy",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#a-concrete-example-customer-churn-prediction",
+    "href": "building-ai-products/ai-system-design.html#a-concrete-example-customer-churn-prediction",
+    "title": "AI System Design",
+    "section": "A Concrete Example: Customer Churn Prediction",
+    "text": "A Concrete Example: Customer Churn Prediction\nConsider a customer churn prediction system for a subscription-based service. The challenge is not merely to predict churn accurately, but to integrate that prediction into a business workflow that enables action. The system must ingest behavioral and demographic data, transform it consistently, train and validate models, and surface predictions to downstream systems such as customer management platforms. It must continue to perform as customer behavior changes, comply with data protection regulations, and provide sufficient transparency for business stakeholders to trust its outputs. When designed top-down, these requirements shape the system from the outset rather than emerging as constraints after deployment.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-system-design.html#from-models-to-sustainable-ai-systems",
+    "href": "building-ai-products/ai-system-design.html#from-models-to-sustainable-ai-systems",
+    "title": "AI System Design",
+    "section": "From Models to Sustainable AI Systems",
+    "text": "From Models to Sustainable AI Systems\nThis methodology reframes AI development from model building to system engineering. Models become components within a larger structure rather than the focal point of the effort. Success is measured not only by predictive performance, but by how effectively the system integrates into the business, scales with demand, adapts to change, and operates responsibly over time. This shift—from models to systems—is essential for building AI that lasts.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>AI System Design</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-self-healing-systems.html",
+    "href": "building-ai-products/ai-self-healing-systems.html",
+    "title": "Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern",
+    "section": "",
+    "text": "From AI System Design to Autonomous Systems\nIn the previous chapter AI System Design we established a foundational shift: building AI in production is no longer primarily a modeling exercise, but a system design discipline. Data scientists and AI engineers are now expected to reason about system boundaries, architectural responsibilities, non-functional constraints, and long-term operational behavior. Once this shift is made explicit, a further implication becomes unavoidable.\nIf AI systems are designed top-down as systems rather than bottom-up as models, then operation itself becomes a design problem. Reliability, adaptation, and recovery are no longer external concerns handled by humans after deployment. They must be designed into the system from the outset.\nSelf-healing agentic systems represent the first mature expression of this idea. They are not an advanced SRE technique, nor a productivity layer on top of existing operations. They are a concrete design pattern for what happens when AI systems are treated as autonomous, long-lived entities operating in complex, dynamic environments.\nThis chapter introduces self-healing agentic systems as a system design pattern, extending the principles of AI system design into the operational domain. It shows how autonomy, coordination, and governance can be deliberately designed, rather than emergent or accidental.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-self-healing-systems.html#why-reliability-breaks-first",
+    "href": "building-ai-products/ai-self-healing-systems.html#why-reliability-breaks-first",
+    "title": "Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern",
+    "section": "Why Reliability Breaks First",
+    "text": "Why Reliability Breaks First\nModern AI-powered systems operate under conditions that exceed human cognitive limits. They are distributed across services, regions, and clouds; they evolve continuously through data drift and retraining; and they interact with real-world business processes in real time. Every layer—data ingestion, feature computation, training, inference, and feedback—introduces new failure modes.\nTraditional reliability practices assume that humans remain the primary control loop:\n\nAlerts notify engineers of abnormal behavior\nEngineers investigate by correlating signals across tools\nDecisions are made under time pressure\nActions are executed manually or semi-automatically\nLearning happens after the incident\n\nThis model does not fail because engineers are insufficiently skilled. It fails because it assumes that linear, human-driven reasoning can keep pace with systems whose complexity is combinatorial and continuous.\nReliability therefore becomes the first domain where the limits of human-centered system design are exposed. As with earlier transitions—from monoliths to microservices, from static infrastructure to elastic cloud—new architectural abstractions are required. In this case, the abstraction is not a component or a service, but distributed cognition.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-self-healing-systems.html#design-principle-reliability-as-distributed-intelligence",
+    "href": "building-ai-products/ai-self-healing-systems.html#design-principle-reliability-as-distributed-intelligence",
+    "title": "Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern",
+    "section": "Design Principle: Reliability as Distributed Intelligence",
+    "text": "Design Principle: Reliability as Distributed Intelligence\nSelf-healing systems are built on a single core principle:\n\nReliability must be designed as a distributed cognitive system, not as an operational workflow.\n\nIn this model, perception, reasoning, coordination, action, and learning are not steps executed sequentially by humans. They are ongoing capabilities embodied by specialized agents that operate continuously and in parallel.\nThis mirrors the shift introduced in the previous chapter:\n\nModels are no longer the center of the system\nPipelines are no longer sufficient abstractions\nBehavior over time matters as much as performance at a point in time\n\nJust as the DFTI model extends pipelines into a system backbone, agentic reliability extends operations into a designed, autonomous layer of the system itself.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-self-healing-systems.html#the-multi-agent-reliability-design-pattern",
+    "href": "building-ai-products/ai-self-healing-systems.html#the-multi-agent-reliability-design-pattern",
+    "title": "Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern",
+    "section": "The Multi-Agent Reliability Design Pattern",
+    "text": "The Multi-Agent Reliability Design Pattern\nAcross organizations building autonomous AI systems, a consistent design pattern is emerging. Reliability responsibilities are decomposed into a set of collaborating agents, each with a clearly defined role and bounded authority. These agents share context through events, state, and memory, forming a closed operational loop.\nThis is not an implementation recipe. It is a design pattern that can be adapted across domains and technologies.\n\nPerception Agents: Designing the Sensory Layer\nPerception agents are responsible for continuous system awareness. They ingest metrics, logs, traces, events, and topology information across the AI system, including data pipelines, training jobs, inference services, and downstream integrations.\nFrom a design perspective, the key question is not what can be observed, but what must be perceived early enough to matter. Weak signals—subtle latency shifts, partial data loss, distribution drift, or cascading retries—often precede visible failures.\nDesign implications:\n\nObservability becomes an input to reasoning, not a dashboard for humans\nSignals must be designed for semantic meaning, not volume\nData scientists and engineers become responsible for defining what constitutes abnormal behavior in learning systems\n\n\n\nDiagnosis Agents: Parallel Reasoning by Design\nWhen anomalies are detected, diagnosis agents take over. Rather than following a single investigative path, multiple agents reason in parallel. They generate competing hypotheses, correlate signals across layers, compare current behavior to historical incidents, and examine recent changes in data, code, configuration, or traffic.\nThis explicitly rejects the assumption that there is a single correct investigative path. Instead, uncertainty is handled through parallelism and confidence scoring.\nDesign implications:\n\nRoot cause analysis becomes a reasoning problem, not a manual process\nTime-to-diagnosis becomes a first-class design metric\nHuman intuition is augmented by systematic exploration of hypotheses\n\n\n\nContext Agents: Institutional Memory as Infrastructure\nDiagnosis without context leads to brittle decisions. Context agents ground technical findings in organizational reality by encoding how the system is supposed to be operated.\nThey incorporate:\n\nRunbooks and playbooks\nIncident history and postmortems\nService ownership and escalation rules\nArchitectural constraints and dependencies\n\nFrom a system design perspective, this transforms documentation from static artifacts into executable memory.\nDesign implications:\n\nOrganizational knowledge becomes part of the runtime system\nAI systems reason not only about infrastructure, but about responsibility and intent\nMaintaining shared context becomes an engineering responsibility\n\n\n\nCoordination Agents: Owning the Operational Lifecycle\nCoordination agents manage the operational workflow end to end. They create and update incidents, correlate related failures, communicate status through ChatOps, and orchestrate work across tools and teams.\nCrucially, they are not assistants to humans. They are owners of the process, with humans intervening primarily for judgment, approval, or policy changes.\nDesign implications:\n\nWorkflow is modeled explicitly, not embedded in human habits\nOperational state becomes machine-readable\nCoordination is decoupled from individual availability\n\n\n\nAction Agents: Graduated Autonomy by Design\nAction agents execute remediation steps: scaling resources, restarting services, rolling back deployments, or triggering automated runbooks. Their defining characteristic is bounded autonomy.\nRather than a binary choice between manual and automatic, self-healing systems introduce graduated autonomy levels:\n\nPropose actions with confidence scores\nExecute low-risk actions automatically\nRequire human approval for high-impact changes\n\nDesign implications:\n\nTrust is designed through constraints and blast-radius control\nAutonomy is aligned with business risk, not technical capability\nLeadership defines where autonomy is acceptable, not how incidents are handled\n\n\n\nGovernance and Guardrail Agents: Designing for AI Failure\nAs AI systems gain autonomy, governance cannot remain an external process. Guardrail agents continuously monitor the behavior of other agents, enforcing hard constraints and safety policies.\nThey assess:\n\nOutput validity and hallucinations\nPolicy violations\nLatency and decision quality\nCompliance with ethical and regulatory constraints\n\nDesign implications:\n\nGovernance becomes real-time and system-enforced\nRisk management moves from review boards to infrastructure\nAI systems are observed and constrained just like any other critical component\n\n\n\nLearning Agents: Closing the Operational Loop\nEvery incident becomes training data. Learning agents analyze which hypotheses were correct, which actions succeeded, where humans intervened, and which signals were misleading. They update detection thresholds, reasoning weights, and action preferences accordingly.\nThis turns failure into a durable system improvement rather than an organizational memory test.\nDesign implications:\n\nPostmortems become structured inputs, not narratives\nSystems improve through use, not periodic redesign\nReliability evolves continuously rather than episodically",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-self-healing-systems.html#implications-for-ai-system-design-and-teams",
+    "href": "building-ai-products/ai-self-healing-systems.html#implications-for-ai-system-design-and-teams",
+    "title": "Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern",
+    "section": "Implications for AI System Design and Teams",
+    "text": "Implications for AI System Design and Teams\nSelf-healing agentic systems make explicit what was implicit in the previous chapter: AI systems must be designed as living systems.\nThis has direct consequences for teams:\n\nData scientists evolve into system designers\nSREs become architects of autonomy and policy\nManagers define boundaries, incentives, and risk tolerance\nSuccess is measured by system behavior over time, not model metrics alone\n\nReliability, in this context, is not an operational concern. It is a design outcome.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/ai-self-healing-systems.html#designing-for-autonomy",
+    "href": "building-ai-products/ai-self-healing-systems.html#designing-for-autonomy",
+    "title": "Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern",
+    "section": "Designing for Autonomy",
+    "text": "Designing for Autonomy\nSelf-healing systems are not an endpoint. They are an early, concrete example of how agentic system design reshapes both technology and organizations. The same principles—distributed cognition, bounded autonomy, continuous learning, and embedded governance—will increasingly define how AI systems are built across domains.\nDesigning for autonomy means accepting that AI systems will act, adapt, and recover without constant human intervention. The role of teams is no longer to control every decision, but to design the conditions under which decisions are made safely.\nIn that sense, self-healing agentic systems are not just about reliability. They are a blueprint for building AI systems—and AI teams—that can operate at scale, under uncertainty, and over time.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern</span>"
+    ]
+  },
+  {
+    "objectID": "building-ai-products/conclusion.html",
+    "href": "building-ai-products/conclusion.html",
+    "title": "Summary and Conclusion",
+    "section": "",
+    "text": "Building AI products is a journey that requires a shift from model-centric thinking to AI system and product design. It requires applying top-down engineering principles to AI, starting from business flow and requirements. It requires using a system design approach to model as a backbone for designing complete AI systems, not just pipelines. It requires incorporating AI-specific constraints—data, training, inference, and governance—early in the design. It requires building AI systems that are robust, scalable, and sustainable, not just accurate.\nBy understanding and applying these principles, you can build AI products that are reliable, scalable, and sustainable, not just accurate.",
+    "crumbs": [
+      "Building AI Products",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Summary and Conclusion</span>"
+    ]
   }
 ]

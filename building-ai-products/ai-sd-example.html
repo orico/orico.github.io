@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Integrating AI Agents as Team Members – Building And Managing High-Impact AI Teams</title>
+<title>AI System Design Example – Building And Managing High-Impact AI Teams</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../team-building/ai-team-lead.html" rel="next">
-<link href="../team-building/ai-engineer.html" rel="prev">
+<link href="../building-ai-products/ai-self-healing-systems.html" rel="next">
+<link href="../building-ai-products/ai-system-design.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../team-building/index.html">Team Building</a></li><li class="breadcrumb-item"><a href="../team-building/ai-agents.html"><span class="chapter-title">Integrating AI Agents as Team Members</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../building-ai-products/index.html">Building AI Products</a></li><li class="breadcrumb-item"><a href="../building-ai-products/ai-sd-example.html"><span class="chapter-title">AI System Design Example</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../team-building/ai-agents.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Integrating AI Agents as Team Members</span></a>
+  <a href="../team-building/ai-agents.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Integrating AI Agents as Team Members</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -257,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../building-ai-products/ai-sd-example.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI System Design Example</span></a>
+  <a href="../building-ai-products/ai-sd-example.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">AI System Design Example</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -282,30 +282,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#from-copilots-to-colleagues" id="toc-from-copilots-to-colleagues" class="nav-link active" data-scroll-target="#from-copilots-to-colleagues">From Copilots to Colleagues</a></li>
-  <li><a href="#context-when-speed-outgrows-structure" id="toc-context-when-speed-outgrows-structure" class="nav-link" data-scroll-target="#context-when-speed-outgrows-structure">Context: When Speed Outgrows Structure</a></li>
-  <li><a href="#step-1-enable-the-human-bottleneck" id="toc-step-1-enable-the-human-bottleneck" class="nav-link" data-scroll-target="#step-1-enable-the-human-bottleneck">Step 1: Enable the Human Bottleneck</a></li>
-  <li><a href="#step-2-allow-agents-to-absorb-responsibility" id="toc-step-2-allow-agents-to-absorb-responsibility" class="nav-link" data-scroll-target="#step-2-allow-agents-to-absorb-responsibility">Step 2: Allow Agents to Absorb Responsibility</a></li>
-  <li><a href="#step-3-turn-leadership-roles-into-agents" id="toc-step-3-turn-leadership-roles-into-agents" class="nav-link" data-scroll-target="#step-3-turn-leadership-roles-into-agents">Step 3: Turn Leadership Roles into Agents</a></li>
-  <li><a href="#step-4-let-process-emerge-via-agents" id="toc-step-4-let-process-emerge-via-agents" class="nav-link" data-scroll-target="#step-4-let-process-emerge-via-agents">Step 4: Let Process Emerge via Agents</a></li>
-  <li><a href="#the-resulting-workflow" id="toc-the-resulting-workflow" class="nav-link" data-scroll-target="#the-resulting-workflow">The Resulting Workflow</a></li>
-  <li><a href="#benefits-of-integrating-agentic-team-members" id="toc-benefits-of-integrating-agentic-team-members" class="nav-link" data-scroll-target="#benefits-of-integrating-agentic-team-members">Benefits of Integrating Agentic Team Members</a></li>
-  <li><a href="#pressures-and-tradeoffs" id="toc-pressures-and-tradeoffs" class="nav-link" data-scroll-target="#pressures-and-tradeoffs">Pressures and Tradeoffs</a></li>
-  <li><a href="#a-pattern-not-a-prescription" id="toc-a-pattern-not-a-prescription" class="nav-link" data-scroll-target="#a-pattern-not-a-prescription">A Pattern, Not a Prescription</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../team-building/index.html">Team Building</a></li><li class="breadcrumb-item"><a href="../team-building/ai-agents.html"><span class="chapter-title">Integrating AI Agents as Team Members</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../building-ai-products/index.html">Building AI Products</a></li><li class="breadcrumb-item"><a href="../building-ai-products/ai-sd-example.html"><span class="chapter-title">AI System Design Example</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Integrating AI Agents as Team Members</span></h1>
+<h1 class="title"><span class="chapter-title">AI System Design Example</span></h1>
 </div>
 
 
@@ -322,124 +307,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="from-copilots-to-colleagues" class="level2">
-<h2 class="anchored" data-anchor-id="from-copilots-to-colleagues">From Copilots to Colleagues</h2>
-<p>Most organizations today use AI as a copilot. It answers questions, drafts text, writes code snippets, and accelerates individual productivity. Yet in almost all cases, it remains fundamentally subordinate—invoked on demand, dismissed when inconvenient, and excluded from responsibility.</p>
-<p>This chapter explores a different organizational pattern: <strong>integrating AI agents as team members</strong>.</p>
-<p>Not as tools. Not as chatbots. But as entities that hold context, perform ongoing roles, and absorb responsibility within real teams.</p>
-<p>This is not a story about automation in the abstract. It is a practical method that emerges under specific constraints, introduces real pressures, and reshapes how work happens when speed outgrows structure.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/ai-agents-workflow.png" class="img-fluid figure-img" alt="Flowchart showing the six-phase agent integration workflow from constraint identification through stable delivery"></p>
-<figcaption>Agent Integration Workflow</figcaption>
-</figure>
-</div>
-</section>
-<section id="context-when-speed-outgrows-structure" class="level2">
-<h2 class="anchored" data-anchor-id="context-when-speed-outgrows-structure">Context: When Speed Outgrows Structure</h2>
-<p>Early-stage and fast-moving organizations often optimize for speed rather than structure. Teams are strong. Execution is rapid. Formal processes are minimal—or entirely absent.</p>
-<p>This works until it doesn’t.</p>
-<p>As products mature, the cost of missing structure becomes visible: decision-making slows, ownership becomes unclear, and coordination depends on a small number of individuals. Critical responsibilities concentrate around founders, senior engineers, or product leaders who carry large portions of the organization’s context in their heads.</p>
-<p>When organizations reach this stage, there are two obvious responses:</p>
-<ol type="1">
-<li>Introduce formal structure—processes, roles, documentation.</li>
-<li>Hire aggressively to spread responsibility.</li>
-</ol>
-<p>In reality, both options are often constrained. Time, budget, and organizational inertia make large structural changes unrealistic. The challenge becomes how to <strong>increase capacity without redesigning the organization from scratch</strong>.</p>
-<p>This is where agentic team members enter—not as a strategy chosen upfront, but as a pattern that emerges when teams attempt to work within existing limits.</p>
-</section>
-<section id="step-1-enable-the-human-bottleneck" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-enable-the-human-bottleneck">Step 1: Enable the Human Bottleneck</h2>
-<p>In nearly every organization, there are individuals who could contribute far more if their constraints were removed.</p>
-<p>These are typically domain specialists: deeply knowledgeable, highly opinionated, and already capable of directing AI systems effectively. Their limitation is rarely insight or creativity. More often, it is a dependency on engineering capacity.</p>
-<p>Ideas queue behind developer availability. Automation waits for implementation. Experiments stall.</p>
-<p>The initial intervention is intentionally narrow: <strong>enablement rather than transformation</strong>.</p>
-<p>By providing these individuals with an AI-assisted development environment, the goal is simple—development augmentation, and eventually, development autonomy. Not to replace engineers, but to remove the constant need for them as intermediaries.</p>
-<p>At first, this appears to be a modest change. In practice, it often becomes a structural inflection point.</p>
-</section>
-<section id="step-2-allow-agents-to-absorb-responsibility" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-allow-agents-to-absorb-responsibility">Step 2: Allow Agents to Absorb Responsibility</h2>
-<p>Once development autonomy increases, work begins to move differently.</p>
-<p>Features ship faster. Experiments run without waiting for handoffs. Responsibility starts to shift.</p>
-<p>AI coding agents locate relevant components, adapt existing patterns, and assemble working implementations. Humans remain accountable—they review, correct, and approve—but they no longer need to be present at every step of creation.</p>
-<p>The effect is subtle but profound. Contributors who were previously blocked now operate in expanded roles, supported by agents rather than by continuous human mediation.</p>
-<p>At this stage, agents are no longer just productivity tools. They begin to <strong>absorb responsibility</strong>.</p>
-</section>
-<section id="step-3-turn-leadership-roles-into-agents" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-turn-leadership-roles-into-agents">Step 3: Turn Leadership Roles into Agents</h2>
-<p>Acceleration creates new bottlenecks.</p>
-<p>As development speed increases, leadership roles that once operated asynchronously or informally struggle to keep up. Product clarifications, prioritization questions, and contextual guidance arrive faster than humans can respond.</p>
-<p>Instead of immediately hiring or restructuring, parts of these leadership roles can be externalized into agents.</p>
-<p>A common example is a product-oriented communication agent embedded directly in the team’s messaging environment. Such an agent typically has access to:</p>
-<ul>
-<li>Organizational vision and business context</li>
-<li>The codebase</li>
-<li>Customer conversations</li>
-<li>Team responsibilities and ownership</li>
-</ul>
-<p>Its function is deliberately narrow: answer routine questions when leadership is unavailable, and reach out asynchronously when human input is required.</p>
-<p>The result is continuous, context-aware guidance without requiring constant human presence. Leadership intent becomes available on demand.</p>
-<p>This, in turn, enables more stakeholders—often non-traditional or newly technical contributors—to experiment and contribute. Predictably, this shifts pressure elsewhere in the system.</p>
-</section>
-<section id="step-4-let-process-emerge-via-agents" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-let-process-emerge-via-agents">Step 4: Let Process Emerge via Agents</h2>
-<p>As contribution broadens, senior engineers often experience increased review and alignment load. The conventional response would be to introduce formal process: reviews, committees, documentation requirements.</p>
-<p>An alternative is to let agents absorb this pressure.</p>
-<p>Technical governance agents can be introduced to:</p>
-<ul>
-<li>Review code changes</li>
-<li>Enforce architectural constraints</li>
-<li>Maintain up-to-date knowledge of system-specific limitations</li>
-</ul>
-<p>Together, these agents create something unusual: <strong>process without process</strong>.</p>
-<p>There are no new standing meetings. No heavy documentation mandates. No explicit bureaucracy.</p>
-<p>Structure emerges only where it is needed, mediated through agents rather than enforced through hierarchy.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/ai-agents-framework.png" class="img-fluid figure-img" alt="Architecture diagram showing the flow from human input through Maya-inspired framework, Mappy orchestration, to the build-ship-test-learn delivery cycle"></p>
-<figcaption>Agentic Framework Architecture</figcaption>
-</figure>
-</div>
-</section>
-<section id="the-resulting-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="the-resulting-workflow">The Resulting Workflow</h2>
-<p>Over time, work converges into a simple, repeatable pattern.</p>
-<ol type="1">
-<li><p><strong>Design</strong> Conducted with a product agent that reflects leadership intent, validates requirements, and gathers stakeholder input asynchronously.</p></li>
-<li><p><strong>Develop</strong> Humans and agents collaborate. Less-experienced contributors remain unblocked while architectural consistency is maintained.</p></li>
-<li><p><strong>Release</strong> Execution proceeds without additional coordination layers.</p></li>
-</ol>
-<p>What looks informal on the surface is, in practice, highly structured—just not in the traditional sense.</p>
-</section>
-<section id="benefits-of-integrating-agentic-team-members" class="level2">
-<h2 class="anchored" data-anchor-id="benefits-of-integrating-agentic-team-members">Benefits of Integrating Agentic Team Members</h2>
-<p>This approach introduces several clear advantages:</p>
-<ol type="1">
-<li><p><strong>Increased throughput without hiring</strong> Workload is absorbed through agent-mediated process and expanded contributor capability.</p></li>
-<li><p><strong>Faster decision-making</strong> Decisions that once took weeks resolve in days via asynchronous, context-aware agents.</p></li>
-<li><p><strong>Reduced coordination overhead</strong> Heavy kickoff meetings give way to lightweight alignment and continuous clarification.</p></li>
-<li><p><strong>Clearer communication</strong> Agents act as neutral intermediaries, focusing feedback on substance rather than availability or authority.</p></li>
-<li><p><strong>Organic process formation</strong> Structure emerges only where needed, instead of being imposed upfront.</p></li>
-</ol>
-</section>
-<section id="pressures-and-tradeoffs" class="level2">
-<h2 class="anchored" data-anchor-id="pressures-and-tradeoffs">Pressures and Tradeoffs</h2>
-<p>The pattern is not without cost.</p>
-<ol type="1">
-<li><p><strong>Increased review load before stabilization</strong> Empowering new contributors initially raises the burden on senior engineers, often requiring additional agent support.</p></li>
-<li><p><strong>Role ambiguity</strong> As humans and agents share responsibility, traditional role boundaries blur and require adjustment.</p></li>
-<li><p><strong>Dependence on high-quality context</strong> Agents are only as effective as the organizational knowledge they can access.</p></li>
-<li><p><strong>Limited portability</strong> This approach depends heavily on people, culture, and organizational stage. It is a pattern—not a turnkey solution.</p></li>
-</ol>
-</section>
-<section id="a-pattern-not-a-prescription" class="level2">
-<h2 class="anchored" data-anchor-id="a-pattern-not-a-prescription">A Pattern, Not a Prescription</h2>
-<p>Organizations that succeed with this approach do not simply “adopt AI tools.” They allow agents to embody roles, retain context, and reshape how work happens.</p>
-<p>The lesson is not about automation.</p>
-<p>It is about the <strong>redistribution of responsibility across humans and agents</strong>, and the organizational change that inevitably follows.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -844,13 +713,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../team-building/ai-engineer.html" class="pagination-link" aria-label="The AI Engineer">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">The AI Engineer</span></span>
+      <a href="../building-ai-products/ai-system-design.html" class="pagination-link" aria-label="AI System Design">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">AI System Design</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../team-building/ai-team-lead.html" class="pagination-link" aria-label="The AI Team Lead">
-        <span class="nav-page-text"><span class="chapter-title">The AI Team Lead</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../building-ai-products/ai-self-healing-systems.html" class="pagination-link" aria-label="Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern">
+        <span class="nav-page-text"><span class="chapter-title">Designing for Autonomy: Self-Healing Agentic Systems as a Design Pattern</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

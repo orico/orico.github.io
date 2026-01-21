@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Integrating AI Agents as Team Members – Building And Managing High-Impact AI Teams</title>
+<title>AI System Design – Building And Managing High-Impact AI Teams</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../team-building/ai-team-lead.html" rel="next">
-<link href="../team-building/ai-engineer.html" rel="prev">
+<link href="../building-ai-products/ai-sd-example.html" rel="next">
+<link href="../building-ai-products/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../team-building/index.html">Team Building</a></li><li class="breadcrumb-item"><a href="../team-building/ai-agents.html"><span class="chapter-title">Integrating AI Agents as Team Members</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../building-ai-products/index.html">Building AI Products</a></li><li class="breadcrumb-item"><a href="../building-ai-products/ai-system-design.html"><span class="chapter-title">AI System Design</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../team-building/ai-agents.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Integrating AI Agents as Team Members</span></a>
+  <a href="../team-building/ai-agents.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Integrating AI Agents as Team Members</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -252,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../building-ai-products/ai-system-design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">AI System Design</span></a>
+  <a href="../building-ai-products/ai-system-design.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">AI System Design</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -287,25 +287,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#from-copilots-to-colleagues" id="toc-from-copilots-to-colleagues" class="nav-link active" data-scroll-target="#from-copilots-to-colleagues">From Copilots to Colleagues</a></li>
-  <li><a href="#context-when-speed-outgrows-structure" id="toc-context-when-speed-outgrows-structure" class="nav-link" data-scroll-target="#context-when-speed-outgrows-structure">Context: When Speed Outgrows Structure</a></li>
-  <li><a href="#step-1-enable-the-human-bottleneck" id="toc-step-1-enable-the-human-bottleneck" class="nav-link" data-scroll-target="#step-1-enable-the-human-bottleneck">Step 1: Enable the Human Bottleneck</a></li>
-  <li><a href="#step-2-allow-agents-to-absorb-responsibility" id="toc-step-2-allow-agents-to-absorb-responsibility" class="nav-link" data-scroll-target="#step-2-allow-agents-to-absorb-responsibility">Step 2: Allow Agents to Absorb Responsibility</a></li>
-  <li><a href="#step-3-turn-leadership-roles-into-agents" id="toc-step-3-turn-leadership-roles-into-agents" class="nav-link" data-scroll-target="#step-3-turn-leadership-roles-into-agents">Step 3: Turn Leadership Roles into Agents</a></li>
-  <li><a href="#step-4-let-process-emerge-via-agents" id="toc-step-4-let-process-emerge-via-agents" class="nav-link" data-scroll-target="#step-4-let-process-emerge-via-agents">Step 4: Let Process Emerge via Agents</a></li>
-  <li><a href="#the-resulting-workflow" id="toc-the-resulting-workflow" class="nav-link" data-scroll-target="#the-resulting-workflow">The Resulting Workflow</a></li>
-  <li><a href="#benefits-of-integrating-agentic-team-members" id="toc-benefits-of-integrating-agentic-team-members" class="nav-link" data-scroll-target="#benefits-of-integrating-agentic-team-members">Benefits of Integrating Agentic Team Members</a></li>
-  <li><a href="#pressures-and-tradeoffs" id="toc-pressures-and-tradeoffs" class="nav-link" data-scroll-target="#pressures-and-tradeoffs">Pressures and Tradeoffs</a></li>
-  <li><a href="#a-pattern-not-a-prescription" id="toc-a-pattern-not-a-prescription" class="nav-link" data-scroll-target="#a-pattern-not-a-prescription">A Pattern, Not a Prescription</a></li>
+  <li><a href="#the-expanding-role-of-the-data-scientist" id="toc-the-expanding-role-of-the-data-scientist" class="nav-link active" data-scroll-target="#the-expanding-role-of-the-data-scientist">The Expanding Role of the Data Scientist</a></li>
+  <li><a href="#the-bottom-up-legacy-of-data-science" id="toc-the-bottom-up-legacy-of-data-science" class="nav-link" data-scroll-target="#the-bottom-up-legacy-of-data-science">The Bottom-Up Legacy of Data Science</a></li>
+  <li><a href="#why-engineering-starts-from-the-top" id="toc-why-engineering-starts-from-the-top" class="nav-link" data-scroll-target="#why-engineering-starts-from-the-top">Why Engineering Starts from the Top</a></li>
+  <li><a href="#designing-before-coding" id="toc-designing-before-coding" class="nav-link" data-scroll-target="#designing-before-coding">Designing Before Coding</a></li>
+  <li><a href="#the-dfti-model-as-a-system-design-backbone" id="toc-the-dfti-model-as-a-system-design-backbone" class="nav-link" data-scroll-target="#the-dfti-model-as-a-system-design-backbone">The DFTI Model as a System Design Backbone</a></li>
+  <li><a href="#from-business-flow-to-system-architecture" id="toc-from-business-flow-to-system-architecture" class="nav-link" data-scroll-target="#from-business-flow-to-system-architecture">From Business Flow to System Architecture</a></li>
+  <li><a href="#integrating-ai-specific-considerations" id="toc-integrating-ai-specific-considerations" class="nav-link" data-scroll-target="#integrating-ai-specific-considerations">Integrating AI-Specific Considerations</a></li>
+  <li><a href="#a-concrete-example-customer-churn-prediction" id="toc-a-concrete-example-customer-churn-prediction" class="nav-link" data-scroll-target="#a-concrete-example-customer-churn-prediction">A Concrete Example: Customer Churn Prediction</a></li>
+  <li><a href="#from-models-to-sustainable-ai-systems" id="toc-from-models-to-sustainable-ai-systems" class="nav-link" data-scroll-target="#from-models-to-sustainable-ai-systems">From Models to Sustainable AI Systems</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../team-building/index.html">Team Building</a></li><li class="breadcrumb-item"><a href="../team-building/ai-agents.html"><span class="chapter-title">Integrating AI Agents as Team Members</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../building-ai-products/index.html">Building AI Products</a></li><li class="breadcrumb-item"><a href="../building-ai-products/ai-system-design.html"><span class="chapter-title">AI System Design</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Integrating AI Agents as Team Members</span></h1>
+<h1 class="title"><span class="chapter-title">AI System Design</span></h1>
 </div>
 
 
@@ -322,121 +321,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="from-copilots-to-colleagues" class="level2">
-<h2 class="anchored" data-anchor-id="from-copilots-to-colleagues">From Copilots to Colleagues</h2>
-<p>Most organizations today use AI as a copilot. It answers questions, drafts text, writes code snippets, and accelerates individual productivity. Yet in almost all cases, it remains fundamentally subordinate—invoked on demand, dismissed when inconvenient, and excluded from responsibility.</p>
-<p>This chapter explores a different organizational pattern: <strong>integrating AI agents as team members</strong>.</p>
-<p>Not as tools. Not as chatbots. But as entities that hold context, perform ongoing roles, and absorb responsibility within real teams.</p>
-<p>This is not a story about automation in the abstract. It is a practical method that emerges under specific constraints, introduces real pressures, and reshapes how work happens when speed outgrows structure.</p>
+<section id="the-expanding-role-of-the-data-scientist" class="level2">
+<h2 class="anchored" data-anchor-id="the-expanding-role-of-the-data-scientist">The Expanding Role of the Data Scientist</h2>
+<p>We have established that the AI industry has created a new and often unspoken expectation: data scientists are no longer responsible only for building models, but for designing complete AI systems. While some practitioners come from computer science backgrounds, system design has rarely been the core competency of data science as a discipline. Most data scientists are trained to optimize models, experiment with features, and improve metrics, not to reason about system boundaries, architectural trade-offs, or long-term operational behavior. This gap has become increasingly visible as AI systems move from experimentation into mission-critical production environments.</p>
+</section>
+<section id="the-bottom-up-legacy-of-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottom-up-legacy-of-data-science">The Bottom-Up Legacy of Data Science</h2>
+<p>Traditional data science development follows a bottom-up trajectory. Work begins with data exploration and modeling, and once a model meets performance expectations, attention shifts to productionization. At that stage, deployment systems are selected or extended to meet the model’s immediate needs, and surrounding infrastructure is built reactively. Architecture emerges as a consequence of the model rather than as a deliberate design. While this approach can work for isolated use cases, it often leads to fragile systems, hidden coupling, and costly redesigns as requirements evolve.</p>
+</section>
+<section id="why-engineering-starts-from-the-top" class="level2">
+<h2 class="anchored" data-anchor-id="why-engineering-starts-from-the-top">Why Engineering Starts from the Top</h2>
+<p>In contrast, established engineering disciplines approach system construction from the top down. System design begins by defining responsibilities, interactions, and constraints at the highest level, long before individual components are implemented. When viewed through this lens, AI development is fundamentally a systems engineering problem. AI introduces new layers—data pipelines, training loops, inference services, monitoring, governance—that cannot be treated as peripheral concerns. Designing these layers requires abstractions and requirements that go beyond both traditional application engineering and classical data science practices.</p>
+</section>
+<section id="designing-before-coding" class="level2">
+<h2 class="anchored" data-anchor-id="designing-before-coding">Designing Before Coding</h2>
+<p>Starting with design fundamentally changes how AI systems are built. A system design allows teams to anticipate architectural changes required by new technologies, align stakeholders before implementation begins, and reason explicitly about trade-offs. It creates a shared understanding of how the system is expected to behave, scale, and evolve. Most importantly, it enables teams to plan for growth, reliability, and operational complexity from the outset, rather than attempting to retrofit these qualities after deployment.</p>
+<p>This approach builds on the <a href="https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction">delivery framework</a> and the <a href="https://www.hopsworks.ai/post/mlops-to-ml-systems-with-fti-pipelines">FTI (feature-training-inference) model</a> by elevating it from a pipeline abstraction into a comprehensive system design perspective that explicitly incorporates the architectural considerations, non-functional requirements, governance, and operational extensions that traditional FTI workflows do not account for.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/ai-agents-workflow.png" class="img-fluid figure-img" alt="Flowchart showing the six-phase agent integration workflow from constraint identification through stable delivery"></p>
-<figcaption>Agent Integration Workflow</figcaption>
+<p><img src="../images/ai-system-design-high-level-flow.png" class="img-fluid figure-img" alt="Flowchart showing the high-level system flow of an AI system"></p>
+<figcaption>High-Level System Flow</figcaption>
 </figure>
 </div>
 </section>
-<section id="context-when-speed-outgrows-structure" class="level2">
-<h2 class="anchored" data-anchor-id="context-when-speed-outgrows-structure">Context: When Speed Outgrows Structure</h2>
-<p>Early-stage and fast-moving organizations often optimize for speed rather than structure. Teams are strong. Execution is rapid. Formal processes are minimal—or entirely absent.</p>
-<p>This works until it doesn’t.</p>
-<p>As products mature, the cost of missing structure becomes visible: decision-making slows, ownership becomes unclear, and coordination depends on a small number of individuals. Critical responsibilities concentrate around founders, senior engineers, or product leaders who carry large portions of the organization’s context in their heads.</p>
-<p>When organizations reach this stage, there are two obvious responses:</p>
-<ol type="1">
-<li>Introduce formal structure—processes, roles, documentation.</li>
-<li>Hire aggressively to spread responsibility.</li>
-</ol>
-<p>In reality, both options are often constrained. Time, budget, and organizational inertia make large structural changes unrealistic. The challenge becomes how to <strong>increase capacity without redesigning the organization from scratch</strong>.</p>
-<p>This is where agentic team members enter—not as a strategy chosen upfront, but as a pattern that emerges when teams attempt to work within existing limits.</p>
+<section id="the-dfti-model-as-a-system-design-backbone" class="level2">
+<h2 class="anchored" data-anchor-id="the-dfti-model-as-a-system-design-backbone">The DFTI Model as a System Design Backbone</h2>
+<p>The framework presented in this chapter builds on the DFTI model—data, features, training, and inference—originally conceived as a delivery-oriented way to reason about AI pipelines. In this context, DFTI is extended from a modeling workflow into a system design backbone. Rather than treating data preparation, model training, and inference as isolated steps, the framework connects them to business intent, architectural decisions, and operational constraints. This extension allows AI systems to be designed holistically rather than assembled incrementally.</p>
+<p>TODO: Add a diagram of the DFTI model as a system design backbone.</p>
 </section>
-<section id="step-1-enable-the-human-bottleneck" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-enable-the-human-bottleneck">Step 1: Enable the Human Bottleneck</h2>
-<p>In nearly every organization, there are individuals who could contribute far more if their constraints were removed.</p>
-<p>These are typically domain specialists: deeply knowledgeable, highly opinionated, and already capable of directing AI systems effectively. Their limitation is rarely insight or creativity. More often, it is a dependency on engineering capacity.</p>
-<p>Ideas queue behind developer availability. Automation waits for implementation. Experiments stall.</p>
-<p>The initial intervention is intentionally narrow: <strong>enablement rather than transformation</strong>.</p>
-<p>By providing these individuals with an AI-assisted development environment, the goal is simple—development augmentation, and eventually, development autonomy. Not to replace engineers, but to remove the constant need for them as intermediaries.</p>
-<p>At first, this appears to be a modest change. In practice, it often becomes a structural inflection point.</p>
+<section id="from-business-flow-to-system-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="from-business-flow-to-system-architecture">From Business Flow to System Architecture</h2>
+<p>Every AI system design begins with a clear understanding of the business flow. This flow describes how value is created, how users interact with the system, and where predictions or decisions are introduced into real-world processes. From this perspective, functional requirements emerge naturally, defining what users should be able to do and how the system should respond. Non-functional requirements define how the system must behave under load, failure, and growth, including latency, scalability, availability, and explainability.</p>
+<p>Once requirements are established, the system’s core entities take shape. Users, actions, events, decisions, and data objects form the conceptual foundation of the design. Interfaces and APIs translate these concepts into explicit interaction points between components. Only then does the high-level architecture emerge, with components defined according to responsibility rather than convenience. At this stage, additional architectural elements are introduced to satisfy non-functional requirements, such as scaling mechanisms, monitoring systems, and reliability controls.</p>
+<p>TODO: Add a diagram of the process of design</p>
 </section>
-<section id="step-2-allow-agents-to-absorb-responsibility" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-allow-agents-to-absorb-responsibility">Step 2: Allow Agents to Absorb Responsibility</h2>
-<p>Once development autonomy increases, work begins to move differently.</p>
-<p>Features ship faster. Experiments run without waiting for handoffs. Responsibility starts to shift.</p>
-<p>AI coding agents locate relevant components, adapt existing patterns, and assemble working implementations. Humans remain accountable—they review, correct, and approve—but they no longer need to be present at every step of creation.</p>
-<p>The effect is subtle but profound. Contributors who were previously blocked now operate in expanded roles, supported by agents rather than by continuous human mediation.</p>
-<p>At this stage, agents are no longer just productivity tools. They begin to <strong>absorb responsibility</strong>.</p>
+<section id="integrating-ai-specific-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="integrating-ai-specific-considerations">Integrating AI-Specific Considerations</h2>
+<p>AI introduces design considerations that must be addressed explicitly and early. Data quality and availability influence architectural boundaries long before model selection begins. Feature pipelines determine how reusable and consistent signals are across the system. Training strategies affect how models evolve, adapt, and are validated over time. Inference requirements drive decisions around latency, batching, and deployment topology. Ethical and regulatory constraints, including fairness, transparency, and privacy, impose system-level obligations that cannot be solved at the model level alone.</p>
+<p>TODO: list all the AI-specific considerations that must be addressed explicitly and early. such as - Data quality and availability - Feature pipelines - Training strategies –model choice (supervised, unsupervised, reinforcement learning, etc.) – model architecture (deep learning, transformers, etc.) in relation to the business problem and objectives (latency) –model training data (size, quality, availability) in relation to the business problem and objectives (latency, scalability, etc.) –model training time (speed, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training cost (cost, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training hardware (hardware, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training software (software, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) –model training environment (environment, efficiency) in relation to the business problem and objectives (latency, scalability, etc.) - Inference requirements - tech stack choice (hardware, software, environment) in relation to the business problem and objectives (latency, scalability, etc.) - Ethical and regulatory constraints -validation and evaluation (metrics, thresholds, etc.) in relation to the business problem and objectives (latency, scalability, etc.), offline, in ci, in real time, batched, etc. –tests (unit, integration, end to end, performance, etc.) in relation to the AI constraints, as pydantic, in ci (pros and cons of too much data to be evaluated), as a observability layer, insights, - Feedback loops - Monitoring and adaptation - Governance - Compliance - Transparency - Explainability - Fairness - Privacy</p>
 </section>
-<section id="step-3-turn-leadership-roles-into-agents" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-turn-leadership-roles-into-agents">Step 3: Turn Leadership Roles into Agents</h2>
-<p>Acceleration creates new bottlenecks.</p>
-<p>As development speed increases, leadership roles that once operated asynchronously or informally struggle to keep up. Product clarifications, prioritization questions, and contextual guidance arrive faster than humans can respond.</p>
-<p>Instead of immediately hiring or restructuring, parts of these leadership roles can be externalized into agents.</p>
-<p>A common example is a product-oriented communication agent embedded directly in the team’s messaging environment. Such an agent typically has access to:</p>
-<ul>
-<li>Organizational vision and business context</li>
-<li>The codebase</li>
-<li>Customer conversations</li>
-<li>Team responsibilities and ownership</li>
-</ul>
-<p>Its function is deliberately narrow: answer routine questions when leadership is unavailable, and reach out asynchronously when human input is required.</p>
-<p>The result is continuous, context-aware guidance without requiring constant human presence. Leadership intent becomes available on demand.</p>
-<p>This, in turn, enables more stakeholders—often non-traditional or newly technical contributors—to experiment and contribute. Predictably, this shifts pressure elsewhere in the system.</p>
+<section id="a-concrete-example-customer-churn-prediction" class="level2">
+<h2 class="anchored" data-anchor-id="a-concrete-example-customer-churn-prediction">A Concrete Example: Customer Churn Prediction</h2>
+<p>Consider a customer churn prediction system for a subscription-based service. The challenge is not merely to predict churn accurately, but to integrate that prediction into a business workflow that enables action. The system must ingest behavioral and demographic data, transform it consistently, train and validate models, and surface predictions to downstream systems such as customer management platforms. It must continue to perform as customer behavior changes, comply with data protection regulations, and provide sufficient transparency for business stakeholders to trust its outputs. When designed top-down, these requirements shape the system from the outset rather than emerging as constraints after deployment.</p>
 </section>
-<section id="step-4-let-process-emerge-via-agents" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-let-process-emerge-via-agents">Step 4: Let Process Emerge via Agents</h2>
-<p>As contribution broadens, senior engineers often experience increased review and alignment load. The conventional response would be to introduce formal process: reviews, committees, documentation requirements.</p>
-<p>An alternative is to let agents absorb this pressure.</p>
-<p>Technical governance agents can be introduced to:</p>
-<ul>
-<li>Review code changes</li>
-<li>Enforce architectural constraints</li>
-<li>Maintain up-to-date knowledge of system-specific limitations</li>
-</ul>
-<p>Together, these agents create something unusual: <strong>process without process</strong>.</p>
-<p>There are no new standing meetings. No heavy documentation mandates. No explicit bureaucracy.</p>
-<p>Structure emerges only where it is needed, mediated through agents rather than enforced through hierarchy.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/ai-agents-framework.png" class="img-fluid figure-img" alt="Architecture diagram showing the flow from human input through Maya-inspired framework, Mappy orchestration, to the build-ship-test-learn delivery cycle"></p>
-<figcaption>Agentic Framework Architecture</figcaption>
-</figure>
-</div>
-</section>
-<section id="the-resulting-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="the-resulting-workflow">The Resulting Workflow</h2>
-<p>Over time, work converges into a simple, repeatable pattern.</p>
-<ol type="1">
-<li><p><strong>Design</strong> Conducted with a product agent that reflects leadership intent, validates requirements, and gathers stakeholder input asynchronously.</p></li>
-<li><p><strong>Develop</strong> Humans and agents collaborate. Less-experienced contributors remain unblocked while architectural consistency is maintained.</p></li>
-<li><p><strong>Release</strong> Execution proceeds without additional coordination layers.</p></li>
-</ol>
-<p>What looks informal on the surface is, in practice, highly structured—just not in the traditional sense.</p>
-</section>
-<section id="benefits-of-integrating-agentic-team-members" class="level2">
-<h2 class="anchored" data-anchor-id="benefits-of-integrating-agentic-team-members">Benefits of Integrating Agentic Team Members</h2>
-<p>This approach introduces several clear advantages:</p>
-<ol type="1">
-<li><p><strong>Increased throughput without hiring</strong> Workload is absorbed through agent-mediated process and expanded contributor capability.</p></li>
-<li><p><strong>Faster decision-making</strong> Decisions that once took weeks resolve in days via asynchronous, context-aware agents.</p></li>
-<li><p><strong>Reduced coordination overhead</strong> Heavy kickoff meetings give way to lightweight alignment and continuous clarification.</p></li>
-<li><p><strong>Clearer communication</strong> Agents act as neutral intermediaries, focusing feedback on substance rather than availability or authority.</p></li>
-<li><p><strong>Organic process formation</strong> Structure emerges only where needed, instead of being imposed upfront.</p></li>
-</ol>
-</section>
-<section id="pressures-and-tradeoffs" class="level2">
-<h2 class="anchored" data-anchor-id="pressures-and-tradeoffs">Pressures and Tradeoffs</h2>
-<p>The pattern is not without cost.</p>
-<ol type="1">
-<li><p><strong>Increased review load before stabilization</strong> Empowering new contributors initially raises the burden on senior engineers, often requiring additional agent support.</p></li>
-<li><p><strong>Role ambiguity</strong> As humans and agents share responsibility, traditional role boundaries blur and require adjustment.</p></li>
-<li><p><strong>Dependence on high-quality context</strong> Agents are only as effective as the organizational knowledge they can access.</p></li>
-<li><p><strong>Limited portability</strong> This approach depends heavily on people, culture, and organizational stage. It is a pattern—not a turnkey solution.</p></li>
-</ol>
-</section>
-<section id="a-pattern-not-a-prescription" class="level2">
-<h2 class="anchored" data-anchor-id="a-pattern-not-a-prescription">A Pattern, Not a Prescription</h2>
-<p>Organizations that succeed with this approach do not simply “adopt AI tools.” They allow agents to embody roles, retain context, and reshape how work happens.</p>
-<p>The lesson is not about automation.</p>
-<p>It is about the <strong>redistribution of responsibility across humans and agents</strong>, and the organizational change that inevitably follows.</p>
+<section id="from-models-to-sustainable-ai-systems" class="level2">
+<h2 class="anchored" data-anchor-id="from-models-to-sustainable-ai-systems">From Models to Sustainable AI Systems</h2>
+<p>This methodology reframes AI development from model building to system engineering. Models become components within a larger structure rather than the focal point of the effort. Success is measured not only by predictive performance, but by how effectively the system integrates into the business, scales with demand, adapts to change, and operates responsibly over time. This shift—from models to systems—is essential for building AI that lasts.</p>
 
 
 </section>
@@ -844,13 +774,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../team-building/ai-engineer.html" class="pagination-link" aria-label="The AI Engineer">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">The AI Engineer</span></span>
+      <a href="../building-ai-products/index.html" class="pagination-link" aria-label="Building AI Products">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Building AI Products</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../team-building/ai-team-lead.html" class="pagination-link" aria-label="The AI Team Lead">
-        <span class="nav-page-text"><span class="chapter-title">The AI Team Lead</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../building-ai-products/ai-sd-example.html" class="pagination-link" aria-label="AI System Design Example">
+        <span class="nav-page-text"><span class="chapter-title">AI System Design Example</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
